@@ -1,13 +1,11 @@
 const swapAllCases = (str) => {
-  let result = '';
-  for (let i = 0; i < str.length; i++) {
-    const char = str[i];
-    const isUppercaseLetter = char === char.toUpperCase();
-    result += isUppercaseLetter ? char.toLowerCase() : char.toUpperCase();
-  }
+return str.replace(/[a-zA-Z]/g, letter => {
+ return letter.match(/[A-Z]/g) ? letter.toLowerCase() : letter.toUpperCase()
+})
 
-  return result;
-};
+}
+let test = swapAllCases('SpONGeBoB TeXT')
+console.log(test)
 
 module.exports = {
   swapAllCases,
