@@ -59,7 +59,7 @@ const fixFileName = (str) => {
   let regex = /\s/g
   return str.replace(regex , '_')
 };
-// I don't know how to stop the I in ITZEL to not clash with capital  alone 
+// I don't know how to stop the I in ITZEL to not clash with capital I alone 
 const nameRedacter = (str) => {
   let regex = /\b(?!AI)(?!a|i)[A-Z]+\b/g
   return str.replace(regex, ' REDACTED')
