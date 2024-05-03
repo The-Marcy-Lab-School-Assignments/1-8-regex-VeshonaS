@@ -41,7 +41,7 @@
   },
   "testScores": {
     "Debug Tests": {
-      "DeTe1": 0
+      "DeTe1": 1
     },
     "Modify Tests": {
       "MoTe1": 1
@@ -66,8 +66,8 @@
     }
   },
   "humanReadable": {
-    "Debug Tests": "0/1",
-    "finalTestScore": "FINAL SCORE: 14/18",
+    "Debug Tests": "1/1",
+    "finalTestScore": "FINAL SCORE: 15/18",
     "Modify Tests": "1/1",
     "From Scratch Tests": "13/16"
   }

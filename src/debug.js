@@ -7,7 +7,8 @@ const isValidCompanyUsername = (username, firstName, lastName) => {
   // to help you debug, look at the final regex
   return regex.test(username);
 };
-console.log(isValidCompanyUsername())
+/** FEEDBACK: It wasn't passing because the console.log from below was empty and it was trying to run the function when there was no value inside. so you could not get the firstName[0] of null. */
+// console.log(isValidCompanyUsername())
 
 module.exports = {
   isValidCompanyUsername,

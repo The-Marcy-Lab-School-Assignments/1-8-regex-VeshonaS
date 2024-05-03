@@ -30,6 +30,9 @@ const isValidEmail = (str) => {
   return /^([a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/g.test(str)
 };
 // I've searched the internet and none of the combinations I've found works.
+/** FEEDBACK: Here is a combination that works!
+ * /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]+[0-9]{3}[-\s\.]+[0-9]{4}$/.test(str)
+ */
 const isValidPhoneNumber = (str) => {
   return /^\d{3}[-.\s]?\d{3}[-.\s]?\d{4}$/gi.test(str)
 };
@@ -55,11 +58,13 @@ const replaceAllNumbers = (str) => {
   return str.replace(regex, '???') 
 };
 // I was confused on one of the tests that wants me to close the gap in "hello  wolrd "
+/** FEEDBACK: YOu were so close here! You were missing the + next to the s. */
 const fixFileName = (str) => {
   let regex = /\s/g
   return str.replace(regex , '_')
 };
 // I don't know how to stop the I in ITZEL to not clash with capital I alone 
+/** FEEDBACK: Your code could have looked like this: str.replace(/\w[A-Z]+/g, 'REDACTED') */
 const nameRedacter = (str) => {
   let regex = /\b(?!AI)(?!a|i)[A-Z]+\b/g
   return str.replace(regex, ' REDACTED')

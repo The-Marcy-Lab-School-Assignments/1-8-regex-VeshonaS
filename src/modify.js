@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job getting this test case to pass! */
 const swapAllCases = (str) => {
 return str.replace(/[a-zA-Z]/g, letter => {
  return letter.match(/[A-Z]/g) ? letter.toLowerCase() : letter.toUpperCase()
